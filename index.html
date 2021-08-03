@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="./flower.js"></script>
+  <link rel="stylesheet" href="./in.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntiCC</title>
+  <meta http-equiv="refresh" content="3;URL=https://gzstudio.cn/homepage.html">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
+    position: relative;
+  }
+
+  .main:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
+    filter: blur(30px);
+    animation: rotate .4s linear infinite;
+  }
+
+  .main::after {
+    content: '安全检测中...';
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .box {}
+</style>
+
+<body>
+  <div class="main">
+  </div>
+</body>
+
+</html>
