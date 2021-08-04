@@ -1,80 +1,71 @@
+<!--
+╔═════════════════════════════════════════════════════════════════════════════════════════════════════
+║FBHomePage 0.2 开源版
+║代码共计72行（包含注释）
+║新拟态页面使用了b站UP “参考系゛”的源码
+║本源码开源协议为 Apache-2.0
+║已授权Gong_cx二开，Gayhub地址为 Gongcxgithub/navigation
+║0.2版在0.1版的基础上修改优化，请及时更新。
+╚═════════════════════════════════════════════════════════════════════════════════════════════════════
+-->
 <!DOCTYPE html>
 <html lang="en">
-<!-- 《安   全   检   测》 -->
 <head>
-  <meta charset="UTF-8">
-  <script src="./flower.js"></script>
-  <link rel="stylesheet" href="./in.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AntiCC</title>
-  <meta http-equiv="refresh" content="3;URL=https://gzstudio.cn/homepage.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hpcss.css">
+    <link rel="stylesheet" href="./css/boxcss.css">
+    <link rel="stylesheet" href="./css/in.css">
+    <!-- 禁止开启F12，默认关闭，需要请删除本注释
+    <script src="./js/nof12.js"></script>
+    -->
+    <script src="./js/flower.js"></script>
+    
+    <title>导航页</title ><!-- 改成你想要的标题 -->
+    
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
-    position: relative;
-  }
-
-  .main:before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
-    filter: blur(30px);
-    animation: rotate .4s linear infinite;
-  }
-
-  .main::after {
-    content: '安全检测中...';
-    text-align: center;
-    line-height: 150px;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #000;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .box {}
-</style>
 
 <body>
-  <div class="main">
-  </div>
-</body>
 
+
+    <div class="container">
+        ><!-- 如果需要更多链接请复制并添加，并在go文件夹里添加页面 -->
+        <div class="box">
+            <div class="img">
+                <a href="./go/go1.html" target="_blank">
+                    <img src="./icos/ico1.png" />
+                </a>
+            </div>
+            <p>填写内容</p>
+        </div>
+         <div class="box">
+            <div class="img">
+                <a href="./go/go2.html" target="_blank">
+                    <img src="./icos/ico2.png" />
+                </a>
+            </div>
+            <p>填写内容</p>
+        </div>
+         <div class="box">
+            <div class="img">
+                <a href="./go/go4.html" target="_blank">
+                    <img src="./icos/ico3.png" />
+                </a>
+            </div>
+            <p>填写内容</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="./go/go4.html" target="_blank">
+                    <img src="./icos/ico4.png" />
+                </a>
+            </div>
+            <p>填写内容</p>
+        </div>
+    </div>
+<!-- 网抑云链接，不需要请删除 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"> <div class="aplayer" data-id="2440040711" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.6" ></div><script>var meting_api='http://api.mizore.cn/meting/api.php?server=:server&type=:type&id=:id'</script><script src="http://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="http://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+<!-- 鼠标点击特效 -->
+<script src="./js/d.js"></script>
+</body>
 </html>
