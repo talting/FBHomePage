@@ -6,6 +6,11 @@
 
 使用 Apache2.0 开源协议
 
+## 预览链接
+
+https://talting.github.io/FBHomePage/
+
+
 ## 非常简洁的安装教程
 0.给Star
 
