@@ -1,11 +1,10 @@
 <!--
 ╔═════════════════════════════════════════════════════════════════════════════════════════════════════
-║FBHomePage 0.2 开源版
-║代码共计72行（包含注释）
+║FBHomePage 0.3 开源版
+║代码共计76行（包含注释）
 ║新拟态页面使用了b站UP “参考系゛”的源码
 ║本源码开源协议为 Apache-2.0
-║已授权Gong_cx二开，Gayhub地址为 Gongcxgithub/navigation
-║0.2版在0.1版的基础上修改优化，请及时更新。
+║0.3版在0.2版的基础上修改优化，请及时更新。
 ╚═════════════════════════════════════════════════════════════════════════════════════════════════════
 -->
 <!DOCTYPE html>
@@ -16,6 +15,8 @@
     <link rel="stylesheet" href="./css/hpcss.css">
     <link rel="stylesheet" href="./css/boxcss.css">
     <link rel="stylesheet" href="./css/in.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- 禁止开启F12，默认关闭，需要请删除本注释
     <script src="./js/nof12.js"></script>
     -->
@@ -26,11 +27,15 @@
 </head>
 
 <body>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
 
-
-    <div class="container">
+    <div class="container" data-aos="zoom-out-up">
         <!-- 如果需要更多链接请复制并添加，并在go文件夹里添加页面 -->
-        <div class="box">
+        <div class="box" >
             <div class="img">
                 <a href="./go/go1.html" target="_blank">
                     <img src="./icos/ico1.png" />
